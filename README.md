@@ -1,2 +1,2 @@
-# web-assembly-test
-Web Assembly Test
+# Web Assembly Test
+Test for web assembly using assemblyscript
