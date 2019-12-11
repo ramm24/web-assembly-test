@@ -1,0 +1,28 @@
+{
+  "name": "web-assembly-test",
+  "version": "0.0.1",
+  "description": "Dev test using basic web assembly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --validate --debug",
+    "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --validate --optimize",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramm24/web-assembly-test.git"
+  },
+  "author": { 
+    "name": "Ramiro Quintana",
+    "email": "jqramiro@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramm24/web-assembly-test/issues"
+  },
+  "homepage": "https://github.com/ramm24/web-assembly-test#readme",
+  "devDependencies": {
+    "assemblyscript": "^0.8.1"
+  }
+}
